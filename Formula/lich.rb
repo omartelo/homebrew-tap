@@ -1,21 +1,21 @@
-# Rendered by .github/workflows/release.yml (0.28.0 -> tag, checksums from the
+# Rendered by .github/workflows/release.yml (0.29.0 -> tag, checksums from the
 # release's checksums.txt) and pushed to the omartelo/homebrew-tap repository —
 # edit this template, never the tap copy.
 class Lich < Formula
   desc "Personal harness for AI-assisted development"
   homepage "https://github.com/omartelo/lich"
-  version "0.28.0"
+  version "0.29.0"
   license "AGPL-3.0-only"
 
   on_macos do
     on_arm do
       url "https://github.com/omartelo/lich/releases/download/v#{version}/lich-v#{version}-darwin-arm64"
-      sha256 "888562732e60c8ad8ecf70ef642fc2b92fa8f5ec0871d1b0e08b2f5e335ab222"
+      sha256 "72a76660a0c3dafa951a4105d7bdd7e7390c3c2b2efa6084312eaa144fb73314"
     end
 
     on_intel do
       url "https://github.com/omartelo/lich/releases/download/v#{version}/lich-v#{version}-darwin-amd64"
-      sha256 "8be790acab9a54184d5eead8c8c8181ba080695f7b00a867fc8e06b41c6fb205"
+      sha256 "30e486f72901ffcdbe874edc9a3899f0e6d8500db92d65f6fc070385438e633d"
     end
   end
 
