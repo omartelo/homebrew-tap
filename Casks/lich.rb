@@ -1,4 +1,4 @@
-# Rendered by .github/workflows/release.yml (0.39.0 -> tag, checksums from the
+# Rendered by .github/workflows/release.yml (0.40.0 -> tag, checksums from the
 # release's checksums.txt) and pushed to the omartelo/homebrew-tap repository as
 # Casks/lich.rb — edit this template, never the tap copy.
 #
@@ -8,15 +8,15 @@
 cask "lich" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.39.0"
-  sha256 arm: "1dca4453e0f448affe4a1daebe539518c6a364b24ba93a336e3a45edad95b08b", intel: "5132b0b7299e3d3577930386379a9bbe7930f06473e303a9114f637f33a37655"
+  version "0.40.0"
+  sha256 arm: "edaf276ca04b43c1405f75a0b655332b569f8eec515b51241148efb67238aead", intel: "624dac58368ed196cb855212a3d5b1b332cae2ea60f5757e67f353abcdd12c73"
 
   url "https://github.com/omartelo/lich/releases/download/v#{version}/lich-v#{version}-darwin-#{arch}.zip"
   name "lich"
   desc "Personal harness for AI-assisted development"
   homepage "https://github.com/omartelo/lich"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :ventura"
 
   app "Lich.app"
   binary "#{appdir}/Lich.app/Contents/MacOS/lich"
