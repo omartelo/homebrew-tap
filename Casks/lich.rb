@@ -1,4 +1,4 @@
-# Rendered by .github/workflows/release.yml (0.49.0 -> tag, checksums from the
+# Rendered by .github/workflows/release.yml (0.50.0 -> tag, checksums from the
 # release's checksums.txt) and pushed to the omartelo/homebrew-tap repository as
 # Casks/lich.rb — edit this template, never the tap copy.
 #
@@ -8,8 +8,8 @@
 cask "lich" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.49.0"
-  sha256 arm: "a91e4adfec837526e641e087bfe3700f44c818f645226ff73f9b74ae1ea8ab4e", intel: "f309ea7f57b90da05d60c72121441fef9d0581f526050e8fbbff4cb78f7836ae"
+  version "0.50.0"
+  sha256 arm: "5ef9959b25950db9b0abbcbaec0ed31a3572e84ec971cf6b8dda11b01a686595", intel: "d1c72fff3acf43bde66c4db560d6e5571555f39b3d2cc82084f25d2d4378b438"
 
   url "https://github.com/omartelo/lich/releases/download/v#{version}/lich-v#{version}-darwin-#{arch}.zip"
   name "lich"
