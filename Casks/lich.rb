@@ -1,4 +1,4 @@
-# Rendered by .github/workflows/release.yml (0.53.1 -> tag, checksums from the
+# Rendered by .github/workflows/release.yml (0.54.0 -> tag, checksums from the
 # release's checksums.txt) and pushed to the omartelo/homebrew-tap repository as
 # Casks/lich.rb — edit this template, never the tap copy.
 #
@@ -8,8 +8,8 @@
 cask "lich" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.53.1"
-  sha256 arm: "28fc0f9cb9a33877a616afbe3ac75b3af5f5e3b2d606def364cd9913b2e2a9d9", intel: "18d6902fa46ead7146717cc2611d2a3d4305f7a24a918f22b866857f13786232"
+  version "0.54.0"
+  sha256 arm: "784adef81c193d9c0a27430c01babd2b19e099ef0528f886159bc02f629509da", intel: "a45ac7250cbab8b9e658e19eb2b52c9ae792b02897dd6d7cb6b1025f19898f96"
 
   url "https://github.com/omartelo/lich/releases/download/v#{version}/lich-v#{version}-darwin-#{arch}.zip"
   name "lich"
@@ -30,11 +30,10 @@ cask "lich" do
   end
 
   caveats <<~EOS
-    On Apple Silicon the app brings its own window. On Intel it has none:
-    lich opens as a tab in your default browser and keeps running after the
-    tab is closed, so stop it from the terminal or by signalling the process.
-    The Dock shows the browser's icon while lich is running; the lich icon is
-    the one in /Applications.
+    The app brings its own window on Apple Silicon and Intel. Should the
+    window fail to open, lich opens as a tab in your default browser instead
+    and keeps running after the tab is closed, so stop it from the terminal
+    or by signalling the process.
 
     macOS support is experimental — see the project README.
   EOS
