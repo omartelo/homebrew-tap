@@ -1,4 +1,4 @@
-# Rendered by .github/workflows/release.yml (0.64.0 -> tag, checksums from the
+# Rendered by .github/workflows/release.yml (0.65.0 -> tag, checksums from the
 # release's checksums.txt) and pushed to the omartelo/homebrew-tap repository as
 # Casks/lich.rb — edit this template, never the tap copy.
 #
@@ -8,8 +8,8 @@
 cask "lich" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.64.0"
-  sha256 arm: "cba0a0c591e03e9e3794eced37177068545093db8ded590cd06714e8c4660f44", intel: "d499b91f4b4352a07905d59054fbc0b0a4f23f027151686bfc9fe9d8e0b51f69"
+  version "0.65.0"
+  sha256 arm: "827b8d86e98086f72fdd83984c005556156fc0b9bfb884dda7fede12ad1414f4", intel: "322123c39c8096ccbfa94b5995000fe3be24ed85da0a589ea0ad2368914591bb"
 
   url "https://github.com/omartelo/lich/releases/download/v#{version}/lich-v#{version}-darwin-#{arch}.zip"
   name "lich"
@@ -34,8 +34,6 @@ cask "lich" do
     window fail to open, lich opens as a tab in your default browser instead
     and keeps running after the tab is closed, so stop it from the terminal
     or by signalling the process.
-
-    macOS support is experimental — see the project README.
   EOS
 
   zap trash: [
