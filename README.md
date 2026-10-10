@@ -1,16 +1,19 @@
 # omartelo/homebrew-tap
 
-Homebrew formulae for my tools.
+Homebrew casks for my tools.
 
 ```bash
-brew install omartelo/tap/lich
+brew install --cask omartelo/tap/youtrack-tui
 ```
 
-| Formula | What it is |
+| Cask | What it is |
 | --- | --- |
-| `lich` | [A personal harness for AI-assisted development](https://github.com/omartelo/lich) |
+| `youtrack-tui` | [Read-only terminal UI for browsing YouTrack issues](https://github.com/omartelo/youtrack-tui) |
 
-Every formula here is rendered by its project's release pipeline and pushed on
-each tag — for `lich`, from `build/darwin/homebrew/lich.rb.tpl` in
-[omartelo/lich](https://github.com/omartelo/lich). Edit the template in the
-project, never the copy in this repository: the next release overwrites it.
+Every cask here is rendered by its project's release pipeline and pushed on
+each tag. Edit the project, never the copy in this repository: the next
+release overwrites it.
+
+lich moved to [lichdotdev/homebrew-tap](https://github.com/lichdotdev/homebrew-tap):
+`brew install --cask lichdotdev/tap/lich`. `tap_migrations.json` sends
+existing installs there.
